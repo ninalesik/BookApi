@@ -1,5 +1,8 @@
+@import "/src/styles/varaibles.scss";
+
 .App {
   text-align: center;
+  background-color: $background-color;
 }
 
 .App-logo {

@@ -1,0 +1,35 @@
+@import "/src/styles/varaibles.scss";
+
+.modal {
+  @apply min-h-screen w-full fixed inset-0 flex items-center justify-center bg-gradient-to-br from-stone-300;
+  .inner {
+    @apply bg-slate-50 w-3/4 p-6 relative overflow-hidden text-lg rounded-md;
+  }
+  .close {
+    @apply absolute top-4 right-4 text-lg hover:scale-90 duration-200;
+  }
+  .box {
+    @apply mt-8 flex justify-center;
+    img {
+      @apply mr-8 w-36 h-48;
+    }
+    h1 {
+      @apply font-semibold;
+    }
+    h3 {
+      @apply font-medium;
+    }
+    h4 {
+      @apply font-light text-sm;
+    }
+    p {
+      @apply font-thin text-xs;
+    }
+    button {
+      @apply mt-4 px-4 py-2 rounded-lg bg-blue-500 text-white font-bold hover:bg-blue-600 shadow-md transform scale-105;
+    }
+  }
+  .description {
+    @apply mt-8 mb-8 text-justify text-xs overflow-y-auto max-h-48 text-base;
+  }
+}

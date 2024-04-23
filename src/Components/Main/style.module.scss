@@ -1,0 +1,41 @@
+@import "/src/styles/varaibles.scss";
+
+.header {
+  @apply w-full h-auto text-gray-500 shadow flex flex-col items-center justify-center mb-7 pt-5;
+}
+.row1 {
+  h1 {
+    @apply italic;
+  }
+}
+
+.row2 {
+  @apply text-center top-2.5;
+  h2 {
+    @apply text-6xl my-2.5;
+  }
+  img {
+    @apply rounded-full w-96 h-auto mx-auto pb-5;
+  }
+  .search {
+    @apply flex items-center justify-center pb-5;
+    input {
+      @apply w-80 h-10 px-1 py-1 text-xl text-slate-900;
+    }
+    button {
+      @apply outline-none border-none h-12 cursor-pointer hover:scale-150 duration-700 pl-2.5;
+    }
+  }
+}
+
+.container {
+  @apply mx-auto grid grid-cols-3 w-3/4 place-items-center gap-3.5;
+}
+@media (max-width: 640px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+}
+.paginationContainer {
+  @apply flex justify-center text-center  mt-2.5;
+}

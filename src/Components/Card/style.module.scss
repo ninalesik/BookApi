@@ -1,0 +1,17 @@
+@import "/src/styles/varaibles.scss";
+
+.card {
+  @apply xl:grid-cols-3 xl:h-auto w-48 h-auto mb-2.5 p-3 duration-1000 cursor-pointer text-center relative bg-amber-200 hover:scale-90 shadow-xl md:grid-cols-2 sm:grid-cols-1 sm:h-auto;
+  img {
+    @apply w-full h-auto;
+  }
+  .bottom {
+    @apply flex flex-col line-clamp-2 text-ellipsis;
+    .title {
+      @apply text-sm mb-5 font-semibold line-clamp-1;
+    }
+    .author {
+      @apply text-sm mb-2.5 font-semibold line-clamp-1 inset-x-2.5;
+    }
+  }
+}
